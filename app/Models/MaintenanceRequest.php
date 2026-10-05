@@ -23,6 +23,7 @@ class MaintenanceRequest extends Model
         'title',
         'description',
         'status',
+        'priority',  
         'scheduled_at',
         'completed_at',
     ];
@@ -31,6 +32,7 @@ class MaintenanceRequest extends Model
     {
         return [
             'scheduled_at' => 'datetime',
+            'completed_at' => 'datetime',
         ];
     }
 
